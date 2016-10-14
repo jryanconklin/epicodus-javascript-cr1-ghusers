@@ -21,7 +21,10 @@ For best results, please:
 - Clone the Repository
 - Install Dependencies Located in "package.json" and "bower.json" files
 - Open HTML file
-- Use an API Key Provided by GitHub, Easily get a test key here:  [https://dl.dropboxusercontent.com/s/qk0qcsy487yg7ci/githubgeneratetoken.png?dl=0](https://dl.dropboxusercontent.com/s/qk0qcsy487yg7ci/githubgeneratetoken.png?dl=0).
+- Place the code below in a .env file at the top of the project folder:
+    exports.apiKey = "YOUR-API-KEY";
+- Easily get an API Key here:  [https://dl.dropboxusercontent.com/s/qk0qcsy487yg7ci/githubgeneratetoken.png?dl=0](https://dl.dropboxusercontent.com/s/qk0qcsy487yg7ci/githubgeneratetoken.png?dl=0).
+- As long as you've created the .env file with the above code, the project will work with or without an API Key. But the key itself is recommended.
 
 ## Known Issues and Bugs
 
