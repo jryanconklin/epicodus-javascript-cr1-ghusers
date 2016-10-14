@@ -21,6 +21,7 @@ For best results, please:
 - Clone the Repository
 - Install Dependencies Located in "package.json" and "bower.json" files
 - Open HTML file
+- Use an API Key Provided by GitHub, Easily get a test key here:  [https://dl.dropboxusercontent.com/s/qk0qcsy487yg7ci/githubgeneratetoken.png?dl=0](https://dl.dropboxusercontent.com/s/qk0qcsy487yg7ci/githubgeneratetoken.png?dl=0).
 
 ## Known Issues and Bugs
 
