@@ -1,12 +1,21 @@
 var User = require('./../js/ghuser.js').ghUserModule;
 
-var displaySuccess = function(name, id) {
-  $('#results').html('<p>The id for ' + name + ' is ' + id + '</p>');
-};
-
-var displayFailure = function(name, message) {
-  $('#results').html('<p>Sorry, ' + name + ' is ' + message + '</p>');
-};
+// var displaySuccess = function(username, name, url) {
+//   $('#results').html('<p>The name for ' + username + ' is ' + name + '</p>');
+//
+//   $('#results').html("<table class='table table-bordered'>" +
+//     "<thead class='inverse'>" +
+//     "<p>" + name + "</p>" + "<tr>" +
+//     "<th>Reposoitory</th>" + "</tr>" + "</thead>" +
+//     "<tbody>" +
+//     "<tr>" +
+//     "<td>" + url + "</td>" + "</tr>" + "</tbody>" + "</table>"
+//     );
+//   };
+//
+// var displayFailure = function(name) {
+//   $('#results').html('<p>Sorry, ' + name + ' is ' + 'message' + '</p>');
+// };
 
 
 $(document).ready(function() {
@@ -15,7 +24,8 @@ $(document).ready(function() {
     var username = $('#search-github').val();
     var newUser = new User(username);
 
-    newUser.getRepos(displaySuccess, displayFailure);
+    // newUser.getUser();
+    newUser.getRepos();
 
 
 
