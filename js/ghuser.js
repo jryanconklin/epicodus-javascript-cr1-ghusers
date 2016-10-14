@@ -4,24 +4,22 @@ function User(username) {
   this.username = username;
 }
 
-User.prototype.getUser = function() {
+User.prototype.getUser = function(displayNameSuccess, displayNameFailure) {
   var username = this.username;
   $.get('https://api.github.com/users/' + username + '?access_token=' + apiKey).then(function(response) {
-    console.log(response);
+    displayNameSuccess(username, response.name);
   }).fail(function(error) {
-    console.log(response);
+    displayNameFailure(username, error.responseJSON.message);
   });
 };
 
-User.prototype.getRepos = function() {
+User.prototype.getRepos = function(displayRepos) {
   var username = this.username;
   $.get('https://api.github.com/users/' + username + '/repos?access_token=' + apiKey).then(function(response) {
 
-    console.log(response);
-
-    for (var i = 0; i < response.length; i++) {
-      console.log(response[i].description);
-    }
+    // for (var i = 0; i < response.length; i++) {
+    //   displayRepos(response[i].full_name, response[i].description, response[i].git_url);
+    // }
 
   }).fail(function(error) {
     console.log(response);
