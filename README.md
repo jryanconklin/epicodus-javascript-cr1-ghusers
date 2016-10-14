@@ -22,7 +22,9 @@ For best results, please:
 - Install Dependencies Located in "package.json" and "bower.json" files
 - Open HTML file
 - Place the code below in a .env file at the top of the project folder:
+
     exports.apiKey = "YOUR-API-KEY";
+
 - Easily get an API Key here:  [https://dl.dropboxusercontent.com/s/qk0qcsy487yg7ci/githubgeneratetoken.png?dl=0](https://dl.dropboxusercontent.com/s/qk0qcsy487yg7ci/githubgeneratetoken.png?dl=0).
 - As long as you've created the .env file with the above code, the project will work with or without an API Key. But the key itself is recommended.
 
