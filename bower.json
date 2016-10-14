@@ -1,0 +1,22 @@
+{
+  "name": "gh-users",
+  "description": "Epicodus JavaScript - Modern JS Apps - Code Review 1",
+  "main": "gulpfile.js",
+  "authors": [
+    "J. Ryan Conklin"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.1.1",
+    "bootstrap": "^3.3.7",
+    "moment": "^2.15.1"
+  }
+}
