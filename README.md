@@ -16,17 +16,18 @@ To use the code, you can clone the repository at [https://github.com/jryanconkli
 
 For best results, please:
 
-- Install npm via Command Line (npm install)
-- Install Bower via Command Line
 - Clone the Repository
-- Install Dependencies Located in "package.json" and "bower.json" files
-- Open HTML file
+- Insure npm and Bower are Installed Globally
+- Install Dependencies Located in "package.json" and "bower.json" files with:
+  `npm install`
+  `bower install`
 - Place the code below in a .env file at the top of the project folder:
-
-        exports.apiKey = "YOUR-API-KEY";
-
+  `exports.apiKey = "YOUR-API-KEY";`
 - Easily get an API Key here:  [https://dl.dropboxusercontent.com/s/qk0qcsy487yg7ci/githubgeneratetoken.png?dl=0](https://dl.dropboxusercontent.com/s/qk0qcsy487yg7ci/githubgeneratetoken.png?dl=0).
 - As long as you've created the .env file with the above code, the project will work with or without an API Key. But the key itself is recommended.
+- To Load the Page, Enter the Following Command:
+  `gulp serve`
+
 
 ## Known Issues and Bugs
 
@@ -36,9 +37,9 @@ None at this time.
 
 *As a user, I want to enter and receive a user information.*
 
-__Input__: Ryan
+__Input__: "GHUserName"
 
-__Output__: Ryan
+__Output__: Project Name, Description and URL for "GHUserName"
 
 
 ## Author/s

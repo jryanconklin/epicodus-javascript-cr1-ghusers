@@ -18,9 +18,14 @@ var displayRepos = function(full_name, description, git_url) {
     );
   };
 
+var clearRepos = function() {
+  $('#results-data').empty();
+}
+
 $(document).ready(function() {
   $('#search-form').on('submit', function(event) {
     event.preventDefault();
+    clearRepos();
     var username = $('#search-github').val();
     var newUser = new User(username);
     newUser.getUser(displayNameSuccess, displayNameFailure);

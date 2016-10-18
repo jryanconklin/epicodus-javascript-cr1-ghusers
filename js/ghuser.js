@@ -30,5 +30,10 @@ User.prototype.getRepos = function(displayRepos) {
 };
 
 
+// if(apiKey === apiKey="YOUR-API-KEY") {
+//
+// } else {
+//
+// }
 
 exports.ghUserModule = User;
